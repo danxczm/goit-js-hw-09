@@ -40,8 +40,8 @@ refs.btnEl.addEventListener('click', onBtnClick);
 function onBtnClick() {
   timerId = setInterval(() => {
     const restTime = convertMs(selectedTime - Date.now());
-    stopTicking(restTime);
     markupEdit(restTime);
+    stopTicking(restTime);
   }, 1000);
 }
 
